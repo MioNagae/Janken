@@ -5,7 +5,7 @@ def janhoi_game
     puts "じゃんけん..."
     puts "[0]グー\n[1]チョキ\n[2]パー\n[３]戦わない"
     player_hand = gets.to_i
-    computer_hand = 0 #rand(3)
+    computer_hand = rand(3)
     jankens = ["グー","チョキ","パー"]
     @janken_pattern = ""
     
@@ -167,7 +167,7 @@ def janhoi_game
   puts "あっち向いて〜〜〜〜〜〜"
   puts "[0]上\n[1]下\n[2]左\n[３]右"
   player_way = gets.to_i
-  computer_way = 0 #rand(4)
+  computer_way = rand(4)
   
   #あっち向いてホイの結果と条件分岐
   #上を出した時
